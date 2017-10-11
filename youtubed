@@ -1,0 +1,3 @@
+#!/bin/bash
+
+youtube-dl -o "$HOME/Downloads/%(title)s.%(ext)s" $1

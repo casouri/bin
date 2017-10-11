@@ -1,0 +1,10 @@
+#!/bin/bash
+
+# set power saving preference to no sleep and not put disk to sleep on battery
+# set it back when exit
+
+pmset -b sleep 0 disksleep 0
+echo press enter to exit
+read
+pmset -b sleep 15 disksleep 10
+echo I shall grant you right to sleep

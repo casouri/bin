@@ -1,0 +1,23 @@
+#!/bin/bash
+
+# download church paper
+wget --quiet http://www.jppc.net/onlinebulletins/200template.pdf -O /tmp/churchpaper.pdf
+echo "# File downloaded"
+
+# print
+echo "# Printing $1 copies"
+for ((i=1;i <= $1;i++))
+{
+  echo "# Printing copy, #$i"
+  lpr -#$1 -P_10_10_0_61 /tmp/churchpaper.pdf
+}
+
+# clean tmp file
+rm /tmp/churchpaper.pdf
+
+# notify
+if [ "$1" = "1" ] || [ -z "$1" ]; then
+  say "Church paper is ready."
+else
+  say "Chuch papers are ready."
+fi
