@@ -1,0 +1,6 @@
+cd /Users/yuan/p/blog
+pelican content -s publishconf.py
+cp -r output/* /Users/yuan/p/casouri.github.io
+
+cd /Users/yuan/p/casouri.github.io
+git push

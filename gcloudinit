@@ -1,0 +1,2 @@
+source ~/attic/google-cloud-sdk/path.zsh.inc
+source ~/attic/google-cloud-sdk/completion.zsh.inc
