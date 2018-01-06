@@ -1,6 +1,8 @@
 cd /Users/yuan/p/blog
-pelican content -s publishconf.py
+pelican ~/note -s publishconf.py
 cp -r output/* /Users/yuan/p/casouri.github.io
 
 cd /Users/yuan/p/casouri.github.io
+git add *
+git commit -m "update"
 git push

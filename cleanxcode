@@ -1,0 +1,9 @@
+# ref: https://stackoverflow.com/questions/36239242/xcode-7-3-taking-too-much-space
+# a size of 50 - 60 GB of system file is reasonable
+# consider cleanning if it is larger than that
+
+rm -rf ~/Library/Developer/Xcode/DerivedData
+rm -rf ~/Library/Developer/Xcode/Archives
+rm -rf "~/Library/Developer/Xcode/iOS DeviceSupport"
+rm -rf ~/Library/Caches/com.apple.dt.Xcode
+xcrun simctl delete unavailable
