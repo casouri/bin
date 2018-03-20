@@ -1,0 +1,7 @@
+#!/bin/bash
+
+mv ~/.emacs.d ~/.emacs.d.tmp
+mv ~/.emacs.second ~/.emacs.d
+mv ~/.emacs.d.tmp ~/.emacs.second
+
+
