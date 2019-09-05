@@ -1,3 +1,4 @@
 #! /bin/bash
 
-rsync -rv ~/Music/iTunes/ /Volumes/Storage/iTunes
+# archive, verbose, display progress
+rsync -avP ~/Music/iTunes/ /Volumes/Storage/iTunes

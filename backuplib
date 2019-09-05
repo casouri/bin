@@ -1,0 +1,8 @@
+#! /bin/bash
+
+# archive, verbose, display progress
+rsync -avP ~/Music/iTunes/ /Volumes/Storage/iTunes
+rsync -avP ~/Movies/ /Volumes/Storage/Movies
+rsync -avP ~/p/ /Volumes/Storage/p
+rsync -avP ~/Documents/ /Volumes/Storage/Documents
+rsync -avP ~/key/ /Volumes/Storage/key
