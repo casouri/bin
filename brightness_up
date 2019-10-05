@@ -1,0 +1,8 @@
+#!/bin/bash
+if [ ! -f /tmp/brightness ]; then
+    echo 0.6 > /tmp/brightness
+fi
+OLD=$(cat /tmp/brightness)
+NEW=$(perl -E "use List::Util qw(min); say min($OLD+0.1, 1)")
+xrandr --output HDMI-1 --brightness $NEW
+echo $NEW > /tmp/brightness

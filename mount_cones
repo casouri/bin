@@ -1,0 +1,2 @@
+#!/bin/bash
+mount -t cifs //192.168.1.5/cones /home/yuan/cones -o username=yuan,password=xijiaomanyan,workgroup=CASTLE,iocharset=utf8,uid=yuan
