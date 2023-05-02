@@ -3,7 +3,7 @@
 # SEE YOU SPACE COWBOY by DANIEL REHN (danielrehn.com)
 # Displays a timeless message in your terminal with cosmic color effects
 
-# Usage: add "sh ~/seeyouspacecowboy.sh; sleep 2" to .bash_logout (or similar) in your home directory
+# Usage: add "bash ~/seeyouspacecowboy.sh; sleep 2" to .bash_logout (or similar) in your home directory
 # (adjust the sleep variable to display the message for more seconds)
 
 # Cosmic color sequence
